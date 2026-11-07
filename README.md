@@ -92,7 +92,7 @@ SELECT * FROM spec ORDER BY id;
 ```
 
 Результат: максимум вырос. В `spec`: `(2, test, id, 50)`.
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/59b5da63-55ee-44ec-a2fb-ab65df424137" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94025035-99fb-4bb3-9202-2625c8aa24b3" />
 
 
 ### Тест 3. Вставка числа меньше максимума
