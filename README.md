@@ -80,6 +80,9 @@ SELECT * FROM spec ORDER BY id;
 ```
 
 Результат: **11**. В `spec`: `(1, spec, id, 2)`, `(2, test, id, 11)`.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bff585a5-9bfc-4db3-869d-2324fa8d9f5b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d92f0aa6-0c94-4db3-89d0-09006a5c18fe" />
+
 
 ### Тест 2. Вставка в обход ХП, число больше максимума
 
@@ -89,6 +92,8 @@ SELECT * FROM spec ORDER BY id;
 ```
 
 Результат: максимум вырос. В `spec`: `(2, test, id, 50)`.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/59b5da63-55ee-44ec-a2fb-ab65df424137" />
+
 
 ### Тест 3. Вставка числа меньше максимума
 
@@ -98,6 +103,8 @@ SELECT * FROM spec ORDER BY id;
 ```
 
 Результат: максимум не изменился. В `spec`: `(2, test, id, 50)`.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94025035-99fb-4bb3-9202-2625c8aa24b3" />
+
 
 ### Тест 4. Обновление до числа больше максимума
 
@@ -107,6 +114,8 @@ SELECT * FROM spec ORDER BY id;
 ```
 
 Результат: максимум вырос. В `spec`: `(2, test, id, 100)`.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3795d1ec-6bec-407b-adfe-9730abd81468" />
+
 
 ### Тест 5. Обновление до меньшего числа
 
@@ -116,6 +125,8 @@ SELECT * FROM spec ORDER BY id;
 ```
 
 Результат: максимум не уменьшился. В `spec`: `(2, test, id, 100)`.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ba025b7c-98d6-42a6-8915-6c236b8437b4" />
+
 
 ### Тест 6. ХП продолжает считать от нового максимума
 
@@ -124,6 +135,8 @@ SELECT next_val('test', 'id');
 ```
 
 Результат: **101**.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1a589778-e98f-4f22-827e-d39cfc84eeaf" />
+
 
 ## Очистка
 
